@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home', [
+        "name" => "Leonardo",
+        "surname" => "Capogna"
+    ]);
+}); 
+
+Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/about-us', function () {
+    return view('hello!!');
+});
+
+Route::get('/contacts', function () {
+    return view('tel: 3049440303');
+});
+
